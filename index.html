@@ -3,15 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>18 Jan Weather app</title>
   </head>
   <body>
-    <h1>Hello, I'm Charul</h1>
-    <h2>I am loving coding</h2>
-    <img
-      src="https://storage.prompt-hunt.workers.dev/cletf7k3w0006lb085k80rywn_1"
-    />
-    <script src="script.js"></script>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="button" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>, <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a
+            href="https://www.linkedin.com/in/charul-bhalerao/"
+            target="_blank"
+          >
+            Charul Bhalerao</a
+          >, is
+          <a href="https://github.com/bhaleraocharul" target="_blank">
+            open-sourced on Github</a
+          >
+          and hosted on
+          <a href="" target="_blank">Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
