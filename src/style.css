@@ -125,10 +125,11 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-right: 10px;
 }
 
 .weather-forecast-temperature-min {
-  color: #9f85e2;
+  color: #8f81b3;
   font-weight: bold;
   display: flex;
   justify-content: center;
