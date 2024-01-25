@@ -101,7 +101,10 @@ footer {
 }
 
 .weather-forecast {
+  margin-top: 30px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .weather-forecast-date {
@@ -133,7 +136,7 @@ footer {
 }
 
 .weather-forecast-icon {
-  width: 40px;
+  width: 80%;
   display: block;
   margin: 0 auto;
 }
