@@ -141,3 +141,55 @@ footer {
   display: block;
   margin: 0 auto;
 }
+
+@media (max-width: 900px) {
+  .weather-app-city {
+    font-size: 24px;
+  }
+
+  .weather-app-temperature {
+    font-size: 48px;
+  }
+
+  .search-form-input {
+    width: 60%;
+    font-size: 13px;
+  }
+
+  .search-form-button {
+    font-size: 13px;
+    padding: 15px 22px;
+  }
+
+  .weather-app-unit {
+    font-size: 18px;
+  }
+
+  .weather-forecast-icon {
+    width: 50%;
+  }
+
+  .weather-forecast-temperature-max {
+    font-size: 12px;
+  }
+
+  .weather-forecast-temperature-min {
+    font-size: 12px;
+  }
+
+  .weather-forecast-date {
+    font-size: 14px;
+  }
+
+  .weather-app-details {
+    font-size: 13px;
+  }
+
+  .weather-app-details strong {
+    font-size: 13px;
+  }
+
+  footer {
+    font-size: 11px;
+  }
+}
